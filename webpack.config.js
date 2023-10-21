@@ -32,9 +32,17 @@ module.exports = {
           'less-loader',
         ],
       },
+      // {
+      //   test: /\.png/,
+      //   type: 'asset/resourse',
+      // },
       {
-        test: /\.png/,
-        type: 'asset/resourse',
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.png$/i,
+        loader: 'url-loader',
       },
     ],
   },
