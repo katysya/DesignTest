@@ -10,6 +10,45 @@ body {
     font-size: 14px;
 }
 
+.logo {
+    fill: inherit;
+    color: @grayLogo;
+    font-family: HelveticaNeueCyr, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &__img {
+        width: 24px;
+        height: 24px;
+    }
+
+    a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+}
+
 .icon {
-    fill: black;
+    fill: @gray;
+    transition: fill 0.3s;
+}
+
+.container {
+    max-width: 1279px;
+    margin: 0 auto;
 }

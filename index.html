@@ -11,6 +11,15 @@
   <body>
     <!--SVG-спрайт-->
     <svg display="none">
+      <symbol id="logo" viewBox="0 0 25 24">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.01911 0H0V24H9.05733V14H13.0828V24H17.1083V14H21.1338V24H24.1529V0H7.04459V10H3.01911V0Z"
+          fill="#DA353B"
+        />
+      </symbol>
+
       <symbol id="twitter" viewBox="0 0 24 24">
         <g clip-path="url(#clip0_1707_601)">
           <path
@@ -56,8 +65,7 @@
       </symbol>
     </svg>
 
-    <p>Привет</p>
-    <svg class="icon">
+    <!--<svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
 
@@ -75,6 +83,72 @@
 
     <svg class="icon">
       <use xlink:href="#instagram"></use>
-    </svg>
+    </svg> -->
+
+    <section class="banner">Баннер</section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="logo">
+            <a href="#"></a>
+            <svg class="logo__img">
+              <use xlink:href="#logo"></use>
+            </svg>
+            <p>design</p>
+          </div>
+          <div class="footer__social">
+            <div class="footer__link">
+              <a href="#"></a>
+              <svg class="icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </div>
+            <div class="footer__square"></div>
+            <div class="footer__link">
+              <a href="#"></a>
+              <svg class="icon">
+                <use xlink:href="#linkedin"></use>
+              </svg>
+            </div>
+            <div class="footer__square"></div>
+            <div class="footer__link">
+              <a href="#"></a>
+              <svg class="icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </div>
+            <div class="footer__square"></div>
+            <div class="footer__link">
+              <a href="#"></a>
+              <svg class="icon">
+                <use xlink:href="#youtube"></use>
+              </svg>
+            </div>
+            <div class="footer__square"></div>
+            <div class="footer__link">
+              <a href="#"></a>
+              <svg class="icon">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </div>
+          </div>
+          <a
+            href="mailto:sale@designconference.ru"
+            class="footer__email"
+            >sale@designconference.ru</a
+          >
+          <a href="tel:+79774906667" class="footer__phone"
+            >+7 (977) 490-66-67</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.js"
+      integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
