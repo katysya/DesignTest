@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },
   plugins: [
@@ -30,6 +31,10 @@ module.exports = {
           'css-loader',
           'less-loader',
         ],
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resourse',
       },
     ],
   },

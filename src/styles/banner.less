@@ -1,0 +1,120 @@
+@import './_variables.less';
+
+.banner {
+    position: relative;
+    padding-bottom: 45px;
+    background: url("../images/Banner/banner.jpg");
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__square {
+        width: 113px;
+        height: 45px;
+        background-color: @red;
+        margin: 0 71% 0 auto;
+    }
+
+    &__content {
+        padding: 37px 46px 120px 41px;
+        background: rgba(0, 0, 0, 0.70);
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        padding-left: 121px;
+    }
+
+    &__design {
+        color: @red;
+        font-weight: 900;
+        line-height: 110%;
+        font-size: 82px;
+        font-style: normal;
+    }
+
+    &__confa {
+        color: @white;
+        font-weight: 100;
+        font-size: 82px;
+        font-style: normal;
+        line-height: 110%;
+        font-family: HelveticaNeueCyr, sans-serif;
+    }
+
+    &__desc {
+        margin-top: 4px;
+        color: @white;
+        font-family: Helvet, sans-serif;
+        line-height: 162.5%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .button--white {
+        margin-top: 21px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__info {
+        position: absolute;
+        right: 0;
+        bottom: 125px;
+        background-color: @red;
+        padding: 21px 44px 20px 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 68px;
+
+        &-img {
+            width: 140px;
+            height: 62px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__date {
+        color: #FFF;
+        font-size: 22.93px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 145%;
+        text-transform: uppercase;
+    }
+
+    &__place {
+        color: #FFF;
+        font-size: 14.724px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+}
