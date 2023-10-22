@@ -48,21 +48,6 @@ $(function () {
     ],
   });
 
-  // /*Клик на отправку формы*/
-  // $('.submit').on('click', function () {
-  //   console.log('Форма отправлена');
-  //   $('#target').trigger('submit');
-  // });
-
-  // /*Событие отправки формы*/
-  // $('#target').on('submit', function (event) {
-  //   event.preventDefault();
-
-  //   /* Axios Отправка запроса*/
-  //   ///
-  //   ///
-  // });
-
   /*Validation*/
   $('form[id="form"]').validate({
     rules: {
