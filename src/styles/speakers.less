@@ -60,14 +60,16 @@
         &.width3 {
             max-width: 353px;
         }
-
     }
-
 
     .swiper {
 
         .slick-list{
             padding: 0 70px 0 0 !important;
+        }
+
+        .slick-dots {
+            display: none !important;
         }
     }
 
@@ -102,4 +104,63 @@
         stroke: @red;
     }
 
+}
+
+@media(max-width: 1320px) {
+    .speakers {
+        .container {
+            margin: 0 0 0 13px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .speakers {
+        margin-top: 80px;
+    }
+}
+
+@media(max-width: 500px) {
+    .speakers {
+        margin-top: 40px;
+
+        &__content {
+            gap: 12px;
+        }
+
+        &__img {
+            width: 245px;
+            height: 245px;
+        }
+
+        &__card {
+            gap: 24px;
+        }
+
+        &__name {
+            line-height: 100%;
+            max-width: 230px;
+        }
+
+        &__navigation {
+            justify-content: center;
+            padding-right: 0;
+            margin-top: 20px;
+        }
+
+        &__desc {
+            &.width2 {
+                max-width: 226px;
+            }
+        }
+
+        
+    .swiper {
+
+        .slick-list{
+            padding: 0 100px 0 0 !important;
+        }
+    }
+
+    }
 }

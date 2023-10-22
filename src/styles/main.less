@@ -83,11 +83,6 @@ body {
       //   margin: 0 0 0 145px;
       // }
     }
-
-    @media(max-width: 1320px) {
-      max-width: 100%;
-      margin: 0 28px;
-    }
 }
 
 .button {
@@ -282,5 +277,23 @@ body {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
               left: -87px;
+    }
+  }
+
+  @media(max-width: 1320px) {
+
+    .container {
+      max-width: 100%;
+      margin: 0 28px;
+    }
+  }
+
+  @media(max-width: 1000px) {
+    .title {
+      &--square {
+        &::before {
+          display: none;
+        }
+      }
     }
   }
