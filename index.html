@@ -327,7 +327,7 @@
         <div class="participation__content">
           <div class="participation__left">
             <h3 class="title"><span class="red">принять</span> участие</h3>
-            <form action="" method="post" class="participation__form">
+            <form id="form" method="post" action="" class="participation__form">
               <div class="participation__group">
                 <input
                   required=""
@@ -361,16 +361,17 @@
               <div class="participation__group">
                 <input
                   required=""
-                  class="input"
+                  class="input input__phone"
                   v-maska data-maska="+7 ### ###-##-##"
                   id="phone"
                   name="phone"
                 />
                 <label for="phone">Телефон</label>
               </div>
-              <buttom type="submit" class="button button--black"
-                ><p>Зарегистрироваться</p></buttom
-              >
+              <div class="submit">
+                <label></label>
+              <input type="submit" value="Зарегистрироваться" class="button"/>
+            </div>
             </form>
           </div>
           <div class="participation__right">
@@ -443,12 +444,12 @@
         </div>
       </div>
     </footer>
-
     <script
       src="https://code.jquery.com/jquery-3.1.0.js"
       integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
       crossorigin="anonymous"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   </body>
 </html>

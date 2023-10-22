@@ -8,15 +8,11 @@ import './src/styles/experts.less';
 import './src/styles/speakers.less';
 import './src/styles/participation.less';
 import './src/styles/footer.less';
-
 import { MaskInput } from 'maska';
 new MaskInput('[data-maska]');
 
 $(function () {
-  console.log('Готов!');
-
-  // $('.speakers__info').html('Информация');
-
+  /*Swiper*/
   $('.swiper').slick({
     centerMode: true,
     dots: false,
@@ -50,5 +46,46 @@ $(function () {
         },
       },
     ],
+  });
+
+  // /*Клик на отправку формы*/
+  // $('.submit').on('click', function () {
+  //   console.log('Форма отправлена');
+  //   $('#target').trigger('submit');
+  // });
+
+  // /*Событие отправки формы*/
+  // $('#target').on('submit', function (event) {
+  //   event.preventDefault();
+
+  //   /* Axios Отправка запроса*/
+  //   ///
+  //   ///
+  // });
+
+  /*Validation*/
+  $('form[id="form"]').validate({
+    rules: {
+      name: 'required',
+      company: 'required',
+      email: {
+        required: true,
+        email: true,
+      },
+      phone: {
+        required: true,
+        minlength: 16,
+      },
+    },
+    messages: {
+      name: 'Введите ваше имя',
+      company: 'ВВедите название компании',
+      email: 'Email введён некорректно',
+      phone: 'Минимум 16 символов',
+    },
+    submitHandler: function (form) {
+      ///Добавление отправки запроса
+      form.submit();
+    },
   });
 });
