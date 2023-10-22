@@ -9,6 +9,7 @@ module.exports = {
     assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },
+  devtool: 'sourse-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
@@ -32,10 +33,10 @@ module.exports = {
           'less-loader',
         ],
       },
-      // {
-      //   test: /\.png/,
-      //   type: 'asset/resourse',
-      // },
+      {
+        test: /\.png/,
+        type: 'asset/resourse',
+      },
       {
         test: /\.html$/i,
         loader: 'html-loader',
@@ -44,6 +45,25 @@ module.exports = {
         test: /\.png$/i,
         loader: 'url-loader',
       },
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env', { targets: 'defaults' }]],
+          },
+        },
+      },
+
+      //   {
+      //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      //     type: 'asset/inline',
+      // },
+      // {
+      //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      //     type: 'asset/inline',
+      // },
     ],
   },
   devServer: {
