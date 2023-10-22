@@ -74,3 +74,30 @@
         }
     }
 }
+
+@media(max-width: 1000px) {
+    .footer {
+        padding: 48px 0;
+
+        &__content {
+            flex-direction: column;
+            gap: 24px;
+        }    
+
+        &__social {
+            order: 1;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .footer {
+        &__content {
+            align-items: flex-start;
+        }
+
+        &__social {
+            gap: 24px;
+        }
+    }
+}
