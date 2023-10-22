@@ -7,6 +7,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <!--SVG-спрайт-->
@@ -63,6 +68,16 @@
           d="M23.0645 2.0046C22.1982 0.974765 20.5987 0.554688 17.5441 0.554688H6.45569C3.33112 0.554688 1.70454 1.00186 0.841471 2.09828C0 3.16728 0 4.74238 0 6.92235V11.0774C0 15.3007 0.9984 17.445 6.45569 17.445H17.5442C20.1931 17.445 21.661 17.0743 22.6106 16.1655C23.5845 15.2335 24 13.7118 24 11.0774V6.92235C24 4.62338 23.9349 3.039 23.0645 2.0046ZM15.4081 9.5735L10.3729 12.2051C10.2603 12.2639 10.1372 12.2931 10.0143 12.2931C9.87507 12.2931 9.73618 12.2556 9.61316 12.1811C9.38152 12.0408 9.24008 11.7897 9.24008 11.5189V6.27265C9.24008 6.0023 9.38113 5.75146 9.61231 5.61102C9.84356 5.47058 10.1312 5.46098 10.3711 5.58563L15.4063 8.20024C15.6625 8.33324 15.8234 8.59771 15.8237 8.88625C15.8241 9.17502 15.6639 9.43988 15.4081 9.5735Z"
         />
       </symbol>
+
+      <symbol id="arrleft" viewBox="0 0 17 14">
+          <path d="M8 1L1.75854 7.04944L8 13.0989"/>
+          <path d="M17 7.25H2.5" stroke-width="1.5" stroke-linejoin="round"/> 
+      </symbol>
+      
+      <symbol id="arrright" viewBox="0 0 17 14">
+        <path d="M9 1L15.2415 7.04944L9 13.0989" stroke-width="1.5"/>
+        <path d="M0 7.25H14.5" stroke-width="1.5" stroke-linejoin="round"/>
+      </symbol>
     </svg>
 
     <!--Banner-->
@@ -100,9 +115,9 @@
                 </li>
               </ul>
             </div>
-            <button class="button button--red">
+            <a href="#form" class="button button--red">
               <p>принять участие</p>
-            </button>
+            </a>
           </header>
           <div class="banner__block">
             <div class="banner__left">
@@ -111,9 +126,9 @@
               <p class="banner__desc">
                 Главное событие в дизайне и архитектуре
               </p>
-              <button class="button button--white">
+              <a href="#form" class="button button--white">
                 <p>принять участие</p>
-              </button>
+              </a>
             </div>
             <div class="banner__right">
               <div class="banner__info">
@@ -166,16 +181,112 @@
     </section>
 
     <section class="speakers">
-      <div class="container container--right">
         <div class="speakers__content">
+          <div class="container container--right">
           <h3 class="title title--square">спикеры</h3>
-          <div class="speakers__info">Info</div>
+          </div>
+          <div class="speakers__info">
+            <div class="container container--right">
+            <div class="swiper">
+              <div>
+                <div class="speakers__card">
+                  <div class="speakers__img">
+                    <img
+                      src="./src/images/Speakers/img2.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="speakers__info">
+                    <p class="speakers__name">
+                      Светлана <span>Котлукова</span>
+                    </p>
+                    <p class="speakers__desc">
+                      Маркетолог, руководитель PR-агентства для
+                      дизайнеров «АрхДиалог»
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="speakers__card">
+                  <div class="speakers__img">
+                    <img
+                      src="./src/images/Speakers/img3.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="speakers__info">
+                    <p class="speakers__name">
+                      Максим <span>Вересов</span>
+                    </p>
+                    <p class="speakers__desc">
+                      Архитектор, строитель, руководитель компании
+                      деревянного строительства
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="speakers__card">
+                  <div class="speakers__img">
+                    <img
+                      src="./src/images/Speakers/img4.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="speakers__info">
+                    <p class="speakers__name">
+                      Андрей <span>Кожемякин</span>
+                    </p>
+                    <p class="speakers__desc">
+                      Архитектор, строитель, руководитель компании
+                      деревянного строительства
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="speakers__card">
+                  <div class="speakers__img">
+                    <img
+                      src="./src/images/Speakers/img1.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="speakers__info">
+                    <p class="speakers__name">
+                      Станислав <span>Орехов</span>
+                    </p>
+                    <p class="speakers__desc width1">
+                      Дизайнер, визуализатор, руководитель студии
+                      <br />
+                      d-e-s-i-g-n.ru
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="speakers__navigation">
+              <button class="swiper__prev arrow">
+                <svg class="speakers__left" fill="none">
+                  <use xlink:href="#arrleft"></use>
+                </svg>
+              </button>
+              <button class="swiper__next arrow">
+                <svg class="speakers__right" fill="none">
+                  <use xlink:href="#arrright"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          </div>
         </div>
-      </div>
+        </div>
+      <!-- </div> -->
     </section>
 
     <!--Form-->
-    <section class="participation">
+    <section class="participation" id="form">
       <div class="participation__background">
         <img
           src="./src/images/Participation/background.webp"
@@ -307,5 +418,6 @@
       integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

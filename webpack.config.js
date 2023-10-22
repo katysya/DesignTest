@@ -9,7 +9,6 @@ module.exports = {
     assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },
-  devtool: 'sourse-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',

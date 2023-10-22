@@ -9,8 +9,16 @@ import './src/styles/speakers.less';
 import './src/styles/participation.less';
 import './src/styles/footer.less';
 
-console.log('Universe answer: ', ANSWER);
-
 $(function () {
   console.log('Готов!');
+
+  // $('.speakers__info').html('Информация');
+
+  $('.swiper').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    nextArrow: document.querySelector('.swiper__next'),
+    prevArrow: document.querySelector('.swiper__prev'),
+  });
 });
