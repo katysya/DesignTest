@@ -9,6 +9,9 @@ import './src/styles/speakers.less';
 import './src/styles/participation.less';
 import './src/styles/footer.less';
 
+import { MaskInput } from 'maska';
+new MaskInput('[data-maska]');
+
 $(function () {
   console.log('Готов!');
 

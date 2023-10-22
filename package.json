@@ -27,6 +27,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "maska": "^2.1.10",
     "query": "^0.2.0"
   }
 }
